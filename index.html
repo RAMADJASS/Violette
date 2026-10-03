@@ -1,0 +1,64 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pour Violette ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="heart">💜</div>
+
+        <p class="small">Pour ma princesse Violette</p>
+
+        <h1>Je suis désolé...</h1>
+
+        <p class="message">
+            Je sais que j’ai peut-être mal agi et que je t’ai blessée.
+            Ce n’était vraiment pas mon intention.
+        </p>
+
+        <p class="message">
+            Je voulais simplement te dire que je suis sincèrement désolé.
+            Tu comptes beaucoup pour moi, et je n’aime pas savoir qu’il y a
+            de la distance entre nous à cause de moi.
+        </p>
+
+        <p class="message">
+            Je ne vais pas chercher mille excuses...
+            Je veux juste reconnaître mon erreur et te demander pardon. ❤️
+        </p>
+
+        <button onclick="showMessage()">
+            Clique ici 💌
+        </button>
+
+        <p id="finalMessage">
+            Violette, ma princesse... j’espère que tu me pardonneras. 💜
+        </p>
+
+        <div class="signature">
+            Avec affection,<br>
+            <strong>Moi ❤️</strong>
+        </div>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById("finalMessage");
+
+            message.classList.add("show");
+        }
+    </script>
+
+</body>
+</html>
+```

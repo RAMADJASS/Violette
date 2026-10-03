@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at top, #eadcff, transparent 45%),
+        linear-gradient(135deg, #f8f0ff, #eee0ff);
+
+    color: #3b2850;
+}
+
+.card {
+    width: 100%;
+    max-width: 520px;
+
+    padding: 45px 35px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 60px rgba(88, 48, 120, 0.15);
+
+    animation: appear 1s ease;
+}
+
+.heart {
+    font-size: 55px;
+    margin-bottom: 10px;
+
+    animation: heartbeat 1.8s infinite;
+}
+
+.small {
+    font-size: 14px;
+    color: #9a70b8;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 25px;
+
+    color: #6d3b91;
+}
+
+.message {
+    font-size: 16px;
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+    color: #594766;
+}
+
+button {
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 50px;
+
+    padding: 14px 28px;
+
+    background: #7d4ca3;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: #663589;
+
+    box-shadow: 0 10px 25px rgba(125, 76, 163, 0.3);
+}
+
+#finalMessage {
+    margin-top: 25px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #7d4ca3;
+
+    opacity: 0;
+    transform: translateY(10px);
+
+    transition: 0.6s;
+}
+
+#finalMessage.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.signature {
+    margin-top: 30px;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #8b7695;
+}
+
+.signature strong {
+    color: #6d3b91;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .card {
+        padding: 35px 22px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .message {
+        font-size: 15px;
+    }
+}
